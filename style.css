@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 4600px;
   background: var(--BG, #0b1d26);
@@ -28,8 +33,9 @@ body {
   flex-shrink: 0;
   position: absolute;
   top: 64px;
-  left: 50px;
-  right: 50px;
+  width: 90%;
+  left: 5%;
+  right: 5%;
   color: white;
   font-weight: 700;
 }
@@ -50,11 +56,16 @@ body {
   justify-content: space-between;
 }
 
+.container {
+  margin: 0;
+}
+
 .top-most-text {
   position: absolute;
   top: 287px;
-  right: 50px;
-  left: 50px;
+  width: 90%;
+  left: 5%;
+  right: 5%;
 }
 
 .flex-social-media {
@@ -84,6 +95,7 @@ body {
   margin-left: 90px;
   margin-right: 60px;
   text-align: left;
+  justify-content: center;
 }
 
 .flex-middle {
@@ -107,6 +119,7 @@ body {
   line-height: normal;
   letter-spacing: 6px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .biggest-heading {
@@ -189,8 +202,9 @@ body {
   gap: 200px;
   position: absolute;
   top: 1440px;
-  left: 100px;
-  right: 100px;
+  width: 80%;
+  left: 10%;
+  right: 10%;
 }
 
 .content-heading {
@@ -217,6 +231,11 @@ body {
   padding-top: 27px;
 }
 
+.content-text-padding {
+  margin-left: 120px;
+  padding-top: 30px;
+}
+
 .read-more {
   color: var(--Accent, #fbd784);
   font-family: Gilroy;
@@ -237,6 +256,17 @@ body {
   position: absolute;
   z-index: -1;
   opacity: 0.1;
+}
+
+.two {
+  top: 2398px;
+  left: auto;
+  right: 20%;
+}
+
+.three {
+  top: 3318px;
+  left: 10%;
 }
 
 .footer-mntn {
@@ -291,10 +321,104 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 32px; /* 177.778% */
-  padding-top: 18px;
+  margin-top: 18px;
 }
 
 .more,
 .more-small {
   text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sub-header {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1859px) and (min-width: 1605px) {
+  .flex-middle-heading {
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .rotate-text {
+    transform: rotate(0deg);
+    margin-top: 24px;
+  }
+  .flex-social-media {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 100px;
+  }
+  .ig-tt {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .flex-middle-heading {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content-heading,
+  .hiking-guide {
+    font-size: medium;
+  }
+  .content-body {
+    font-size: x-small;
+  }
+  .biggest-heading {
+    font-size: larger;
+    line-height: 50px;
+  }
+  .content-text-padding {
+    margin-left: 20%;
+  }
+  .more-one {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 577px) {
+  .read-more {
+    margin-bottom: 50px;
+  }
+  .two {
+    top: 3118px;
+  }
+  .three {
+    top: 4358px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .colu-more {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 553px) {
+  .copyright {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer-mntn-text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .read-more {
+    margin-bottom: 50px;
+  }
 }
