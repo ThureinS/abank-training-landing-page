@@ -15,12 +15,44 @@
   <body>
     <!-- <div class="mntn"></div> -->
     <div class="bg-hero"></div>
-    <div class="header">
-      <div style="font-size: 32px; font-family: Chronicle Display">MNTN</div>
-      <div class="sub-header">
-        <div>Equipment</div>
-        <div>About Us</div>
-        <div>Blog</div>
+    <nav class="navbar header" id="big-nav">
+      <a href="#" style="font-size: 32px; font-family: Chronicle Display"
+        >MNTN</a
+      >
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Equipment</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Blog</a>
+        </li>
+      </ul>
+      <div class="account">
+        <img src="./assets/cart.svg" />
+        <div>Account</div>
+      </div>
+    </nav>
+
+    <nav class="navbar header" id="small-nav">
+      <a href="#" style="font-size: 32px; font-family: Chronicle Display"
+        >MNTN</a
+      >
+      <div>
+        <img src="./assets/hamburger-menu.svg" id="menu-icon" />
+      </div>
+    </nav>
+    <div id="nav-small-menu">
+      <div class="nav-item">
+        <a href="#" class="nav-link">Equipment</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link">About Us</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link">Blog</a>
       </div>
       <div class="account">
         <img src="./assets/cart.svg" />
@@ -46,13 +78,13 @@
             <div class="biggest-heading">
               Be prepared for the Mountains and beyond!
             </div>
-            <div class="scroll-down">
+            <a href="#content" class="scroll-down">
               scroll down
               <img
                 src="./assets/arrow_downward_24px.svg"
                 style="margin-left: 10px"
               />
-            </div>
+            </a>
           </div>
         </div>
         <div class="col-xxl-1 col-xl-1 col-lg-2 col-md-2 col-sm-2 col-4">
@@ -75,7 +107,7 @@
     <img src="./assets/MG.png" class="mg" />
     <img src="./assets/VG.png" class="vg" />
     <div class="bg-content"></div>
-    <div class="content">
+    <div class="content" id="content">
       <div class="container text-center">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-6 content-text-padding">
@@ -95,8 +127,8 @@
               you – novice, moderate, advanced moderate, expert, or expert
               backpacker?
             </div>
-            <div class="read-more content-top-padding">
-              read more
+            <div class="content-top-padding content-margin-padding">
+              <a href="" class="read-more">read more</a>
               <img
                 src="./assets/arrow_downward.svg"
                 style="margin-left: 10px"
@@ -129,8 +161,8 @@
               beginners make is wearing jeans and regular clothes, which will
               get heavy and chafe wif they get sweaty or wet.
             </div>
-            <div class="read-more content-top-padding">
-              read more
+            <div class="content-top-padding content-margin-padding">
+              <a href="" class="read-more">read more</a>
               <img
                 src="./assets/arrow_downward.svg"
                 style="margin-left: 10px"
@@ -157,8 +189,8 @@
               next landmark is as I hike. For example, I’ll read the guide and
               know that say, in a mile, I make a right turn at the junction..
             </div>
-            <div class="read-more content-top-padding">
-              read more
+            <div class="content-top-padding content-margin-padding">
+              <a href="" class="read-more">read more</a>
               <img
                 src="./assets/arrow_downward.svg"
                 style="margin-left: 10px"
@@ -172,7 +204,7 @@
       </div>
       <div class="container text-center">
         <div class="row align-items-center">
-          <div class="col">
+          <div class="col-sm-12 col-md-6">
             <div class="footer-mntn">MNTN</div>
             <div class="footer-mntn-text">
               Get out there & discover your next slope, mountain & destination!
@@ -202,8 +234,10 @@
         </div>
       </div>
     </div>
-    <div class="number" style="top: 1478px; left: 10%">01</div>
+    <div class="number one">01</div>
     <div class="number two">02</div>
     <div class="number three">03</div>
+    <img src="" id="scroll-top-image" />
+    <script src="script.js"></script>
   </body>
 </html>
